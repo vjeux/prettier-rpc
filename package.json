@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build": "rollup --environment lib -c rollup.config.js && rollup --environment cli -c rollup.config.js && rollup --environment rpc -c rollup.config.js",
     "test": "node test.js"
   },
   "dependencies": {
